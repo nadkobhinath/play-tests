@@ -32,12 +32,15 @@ playwright-tests/
 └── ci.yml # GitHub Actions pipeline  
 
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ---
 ### Prerequisites
 - Node.js **v18+**
 - npm **v9+**
+- A test user account that has an address, payment card created
+- create a .env.dev file locally and refer the .env.example
+- pipeline secrets have to be added for BASE_URL, EMAIL and PASSWORD, to run in the Github pipeline
 
 Verify:
 ```bash

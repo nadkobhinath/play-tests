@@ -39,7 +39,7 @@ test.describe('products page tests', () => {
         await page.locator('xpath=//mat-row[1]/mat-cell[5]//button').click();
     });
 
-    test('An Order shall be pplaced successfully', async ({ loggedInPage }) => {
+    test('An Order shall be placed successfully', async ({ loggedInPage }) => {
         const page = loggedInPage;
         await page.locator("xpath=//div[contains(.,'Apple Juice')]/../following-sibling::div//button[contains(.,'Add to Basket')]").click();
         await page.locator('button[aria-label="Show the shopping cart"]').click();
