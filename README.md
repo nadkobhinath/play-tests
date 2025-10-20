@@ -9,7 +9,7 @@ The project supports:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 playwright-tests/  
 ├── playwright.config.ts # Central Playwright config  
@@ -40,7 +40,7 @@ playwright-tests/
 - npm **v9+**
 - A test user account that has an address, payment card created
 - create a .env.dev file locally and refer the .env.example
-- pipeline secrets have to be added for BASE_URL, EMAIL and PASSWORD, to run in the Github pipeline
+- pipeline secrets have to be added for BASE_URL, QA_EMAIL and QA_PASSWORD, to run in the Github pipeline
 
 Verify:
 ```bash
