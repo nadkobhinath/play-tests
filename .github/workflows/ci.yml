@@ -6,7 +6,9 @@ on:
   pull_request:
 env:
       ENV: qa
-      
+      EMAIL: ${{ secrets.QA_EMAIL }}
+      PASSWORD: ${{ secrets.QA_PASSWORD }}
+
 jobs:
   ui-tests:
     name: UI Cross-Browser Tests
