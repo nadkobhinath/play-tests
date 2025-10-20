@@ -1,0 +1,26 @@
+{
+  "name": "playwright-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --project=\"Chromium,UI - Firefox,UI - WebKit\"",
+    "test:api": "npx playwright test --project=API",
+    "test:chrome": "npx playwright test --project=\"UI - Chromium\"",
+    "test:firefox": "npx playwright test --project=\"UI - Firefox\"",
+    "test:webkit": "npx playwright test --project=\"UI - WebKit\"",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "playwright": "^1.56.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
