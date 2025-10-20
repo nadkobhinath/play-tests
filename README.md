@@ -12,24 +12,23 @@ The project supports:
 ## Project Structure
 
 playwright-tests/  
-├── playwright.config.ts # Central Playwright config  
-├── package.json # Project dependencies & scripts  
-├── tsconfig.json # TypeScript config  
+├── playwright.config.ts  
+├── package.json  
+├── tsconfig.json  
 │  
 ├── tests/  
 │ ├── ui/  
-│ │ ├── example-ui.spec.ts # Sample UI test  
-│ │ └── helpers/ # UI helper utilities  
+│ │ ├── fixtures.ts  
+│ │ └── login.spec.ts
+│ │ └── order.spec.ts
 │ └── api/  
-│ ├── example-api.spec.ts # Sample API test  
-│ └── helpers/ # API helper utilities  
+│ ├── fixtures.ts  
+│ └── login-api.spec.ts
+│ └── order.spec.ts
 │
-├── utils/  
-│ └── env.ts # (optional) environment helpers  
-│  
 └── .github/  
 └── workflows/  
-└── ci.yml # GitHub Actions pipeline  
+└── ci.yml  
 
 
 ## Setup Instructions
