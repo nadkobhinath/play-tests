@@ -10,7 +10,6 @@ test.describe('products page tests', () => {
 
         // removing the product from the basket
         await page.locator('xpath=//mat-row[1]/mat-cell[5]//button').click();
-
     });
 
     test('Logging out and logging back in shall persist the basket items', async ({ loggedInPage }) => {

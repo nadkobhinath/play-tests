@@ -1,9 +1,10 @@
-name: Playwright Parallel Tests
+name: Playwright Tests
 
 on:
   push:
     branches: [ main ]
   pull_request:
+
 env:
       ENV: qa
       EMAIL: ${{ secrets.QA_EMAIL }}

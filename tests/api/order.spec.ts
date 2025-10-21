@@ -144,10 +144,7 @@ test.describe('Product listing, Basket and Checkout tests', () => {
         const basketProducts = await basketProductsJson.data.Products;
 
         for (const product of basketProducts) {
-            console.log(`prod id: ${product.id}`);
             const delResponse = await authRequest.delete(`/api/BasketItems/${product.BasketItem.id}`);
-
-            console.log(delResponse.status());
             expect(delResponse.status()).toBe(200);
         }
     });

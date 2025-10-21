@@ -1,5 +1,4 @@
 import { test as baseTest, expect, Page } from '@playwright/test';
-import { EnvConfig } from '../../utils/env';
 
 type MyFixtures = {
     loggedInPage: Page;
@@ -31,7 +30,7 @@ export const test = baseTest.extend<MyFixtures>({
         await page.waitForURL('**/search');
 
 
-        
+
 
         await use(page);
 
